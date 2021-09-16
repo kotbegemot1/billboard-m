@@ -70,6 +70,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'bboard.wsgi.application'
+AUTH_USER_MODEL = 'main.AdvUser'
 
 
 # Database

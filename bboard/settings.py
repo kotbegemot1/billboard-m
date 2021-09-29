@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-97gx$yz2t_98m-u975an%dx1%8sxa1%0tvu6gmmcrv5f8rjod+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['fathomless-wildwood-01915.herokuapp.com']
+ALLOWED_HOSTS = ['fathomless-wildwood-01915.herokuapp.com', '127.0.0.1']
 
 DEFAULT_FROM_EMAIL = 'ivan.banan.2021@mail.ru'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

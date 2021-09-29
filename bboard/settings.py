@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
     'bootstrap4',
-    'social_django',
     'django_cleanup',
     'easy_thumbnails',
     'captcha',
@@ -67,21 +66,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
-CORS_URLS_REGEX = r'^/api/.*$'
-
 ROOT_URLCONF = 'bboard.urls'
 
-SOCIAL_AUTH_VK_OAUTH2_KEY = '7957042'
-SOCIAL_AUTH_VK_OAUTH2_SECRET = 'XfLtM7uNHKheZQvkwjlC'
-
-SOCIAL_AUTH_POSTGRES_JSONFIELD = True
-SOCIAL_AUTH_JSONFIELD_ENABLED = True
-
-AUTHENTICATION_BACKENDS = (
-    'social_core.backends.vk.VKOAuth2',
-    'django.contrib.auth.backends.ModelBackend',
-)
 
 TEMPLATES = [
     {
@@ -94,8 +80,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'social_django.context_processors.backends',
-                'social_django.context_processors.login_redirect',
                 'main.middlewares.bboard_context_processor',
             ],
         },

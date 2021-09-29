@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-97gx$yz2t_98m-u975an%dx1%8sxa1%0tvu6gmmcrv5f8rjod+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['fathomless-wildwood-01915.herokuapp.com', '127.0.0.1']
 
@@ -32,7 +32,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.mail.ru'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'ivan.banan.2021@mail.ru'
-EMAIL_HOST_PASSWORD = 'ckj;ysqgfhjkm1'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
 
 
